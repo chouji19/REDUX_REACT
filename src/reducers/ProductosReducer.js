@@ -14,7 +14,7 @@ import {
     COMENZAR_EDICION_PRODUCTO 
  
 } from '../types'
-import { act } from 'react-dom/test-utils'
+
 
 
 //Cada reducer tiene su propio state
@@ -30,6 +30,7 @@ const initialState = {
 export default function(state=initialState, action) {
     switch (action.type) {
         case COMENZAR_DESCARGA_PRODUCTOS:
+        case COMENZAR_EDICION_PRODUCTO:
         case PRODUCTO_ELIMINADO_ERROR:
         case PRODUCTO_EDITADO_ERROR:
         case AGREGAR_PRODUCTO:

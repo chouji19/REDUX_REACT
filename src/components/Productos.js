@@ -11,6 +11,7 @@ const Productos = () => {
     useEffect( (params) => {
         const cargarProductos = () => dispatch( obtenerProductosAction() );
         cargarProductos();
+        // eslint-disable-next-line 
     }, []
     );
 
